@@ -30,10 +30,10 @@ header .logo {
     align-items: center;
 }
 
-/* Ajustar o tamanho do logo */
+/* Ajuste o tamanho da imagem do logo */
 header .logo img {
-    width: 150px; /* Ajuste para o tamanho desejado */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 150px !important; /* Forçar o tamanho */
+    height: auto !important; /* Forçar a altura proporcional */
 }
 
 header .logo h1 {
