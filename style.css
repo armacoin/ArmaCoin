@@ -32,7 +32,7 @@ header .logo {
 
 /* Ajustar o tamanho do logo */
 header .logo img {
-    width: 150px; /* Ajuste para o tamanho desejado */
+    width: 5px; /* Ajuste para o tamanho desejado */
     height: auto; /* Mantém a proporção da imagem */
 }
 
