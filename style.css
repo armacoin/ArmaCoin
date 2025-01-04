@@ -1,95 +1,149 @@
-body {
-    font-family: 'Poppins', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #4E00FF, #00E4FF);
-    color: #ffffff;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #131316, #9945FF);
+    color: #FFF;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
-    padding: 20px 0;
+    background: #131316;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.logo {
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo h1 {
     font-size: 2rem;
-    font-weight: 600;
-    color: #FFD700;
+    margin-left: 10px;
+    color: #00FFA3;
+    font-weight: 700;
 }
 
-nav {
-    margin: 20px 0;
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
-    color: #FFFFFF;
-    margin: 0 15px;
-    font-weight: 500;
-    transition: color 0.3s;
+    color: #FFF;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #FFD700;
+header nav a:hover {
+    color: #00FFA3;
 }
 
-.icons {
+#hero {
+    background: linear-gradient(135deg, #00FFA3, #9945FF);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin: 40px 0;
+    align-items: center;
+    text-align: center;
 }
 
-.icon {
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    padding: 15px 30px;
+    background: #00FFA3;
+    color: #131316;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#hero .btn:hover {
+    transform: scale(1.1);
+    background: #9945FF;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.character-image {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.roadmap {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.phase {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s, background 0.3s;
+    width: 30%;
+    transition: transform 0.3s ease;
 }
 
-.icon:hover {
+.phase:hover {
     transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.2);
 }
 
-.icon img {
-    width: 60px;
-    height: 60px;
+.social-icons {
+    margin-top: 30px;
 }
 
-.icon p {
-    margin: 10px 0 0;
-    font-size: 1rem;
+.social-link {
+    display: inline-block;
+    margin: 10px;
+    color: #FFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #00FFA3;
 }
 
 footer {
-    margin-top: 50px;
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: #131316;
     text-align: center;
-}
-
-footer p {
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-footer a {
-    color: #FFD700;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    padding: 20px;
+    color: #FFF;
 }
