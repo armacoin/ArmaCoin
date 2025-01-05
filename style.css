@@ -1,4 +1,4 @@
-/* Reset geral */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -32,21 +32,21 @@ header .logo {
 }
 
 header .logo img {
-    width: 120px; /* Tamanho ajustado para o logo */
+    width: 120px;  /* Adjust the size of the logo */
     height: auto;
 }
 
 header .logo h1 {
     font-size: 2rem;
-    margin-left: 10px;
     color: #00FFA3;
     font-weight: 700;
+    margin-left: 10px;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 header nav a {
@@ -68,73 +68,92 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
 }
 
-.hero-content h2 {
+#hero .hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+#hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #FFF;
 }
 
-.hero-content p {
+#hero p {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
-.btn {
+#hero .btn {
     padding: 15px 30px;
     background: #00FFA3;
     color: #131316;
-    border-radius: 10px;
-    font-size: 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
     text-decoration: none;
-    transition: background 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.btn:hover {
+#hero .btn:hover {
+    transform: scale(1.1);
     background: #9945FF;
-    transform: translateY(-5px); /* Levanta o botão no hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Roadmap Section */
-.roadmap {
+#roadmap {
+    padding: 80px 20px;
+    background: #131316;
+    text-align: center;
+}
+
+#roadmap h2 {
+    font-size: 3rem;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+
+.roadmap-content {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .phase {
     background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 10px;
     width: 30%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .phase:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Social Icons */
+.phase h3 {
+    font-size: 1.5rem;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.phase p {
+    font-size: 1rem;
+    color: #FFF;
+}
+
+/* Social Links */
 .social-icons {
-    display: flex;
-    justify-content: center;
     margin-top: 30px;
+    text-align: center;
 }
 
 .social-link {
+    display: inline-block;
+    margin: 10px;
     color: #FFF;
     font-size: 2rem;
-    margin: 0 15px;
     transition: color 0.3s ease;
 }
 
@@ -148,7 +167,5 @@ footer {
     text-align: center;
     padding: 20px;
     color: #FFF;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 50px;
 }
