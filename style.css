@@ -5,19 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Body and Background */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #131316, #9945FF); /* Gradient background */
+    background: linear-gradient(135deg, #131316, #9945FF);
     color: #FFF;
     line-height: 1.6;
     overflow-x: hidden;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-/* Header */
 header {
     background: #131316;
     padding: 20px 40px;
@@ -35,22 +30,23 @@ header .logo {
     align-items: center;
 }
 
+/* Ajuste o tamanho da imagem do logo */
 header .logo img {
-    width: 120px;  /* Logo size adjustment */
-    height: auto;
+    width: 150px !important; /* Forçar o tamanho */
+    height: auto !important; /* Forçar a altura proporcional */
 }
 
 header .logo h1 {
     font-size: 2rem;
+    margin-left: 50px; /* Aumente ou diminua conforme necessário */
     color: #00FFA3;
     font-weight: 700;
-    margin-left: 10px;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
 }
 
 header nav a {
@@ -64,7 +60,6 @@ header nav a:hover {
     color: #00FFA3;
 }
 
-/* Hero Section */
 #hero {
     background: linear-gradient(135deg, #00FFA3, #9945FF);
     height: 100vh;
@@ -72,17 +67,29 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
+
+    .jogar-btn {
+    padding: 15px 30px;
+    background: #00FFA3;  /* Cor do botão */
+    color: #131316;       /* Cor do texto */
+    border-radius: 5px;
+    font-size: 1.2rem;     /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Garante que o botão não ocupe toda a largura */
+    margin-top: 20px;      /* Espaçamento superior */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transições */
 }
 
-#hero .hero-content {
-    max-width: 600px;
-    padding: 20px;
+.jogar-btn:hover {
+    background: #9945FF;  /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+}
 }
 
 #hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #FFF;
 }
 
 #hero p {
@@ -105,21 +112,23 @@ header nav a:hover {
     background: #9945FF;
 }
 
-/* Roadmap Section */
-#roadmap {
-    padding: 80px 20px;
-    background: #131316;
+.section {
+    padding: 100px 20px;
     text-align: center;
-    flex-grow: 1;
 }
 
-#roadmap h2 {
-    font-size: 3rem;
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: #FFF;
-    margin-bottom: 50px;
 }
 
-.roadmap-content {
+.character-image {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.roadmap {
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -135,31 +144,19 @@ header nav a:hover {
 }
 
 .phase:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-.phase h3 {
-    font-size: 1.5rem;
-    color: #FFF;
-    margin-bottom: 10px;
-}
-
-.phase p {
-    font-size: 1rem;
-    color: #FFF;
-}
-
-/* Social Links */
 .social-icons {
     margin-top: 30px;
-    text-align: center;
 }
 
 .social-link {
     display: inline-block;
     margin: 10px;
     color: #FFF;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -167,11 +164,9 @@ header nav a:hover {
     color: #00FFA3;
 }
 
-/* Footer */
 footer {
     background: #131316;
     text-align: center;
     padding: 20px;
     color: #FFF;
-    margin-top: 50px;
 }
