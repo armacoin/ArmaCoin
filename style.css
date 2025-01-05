@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Body and Background */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #131316, #9945FF);
+    background: linear-gradient(135deg, #131316, #9945FF); /* Gradient background */
     color: #FFF;
     line-height: 1.6;
     overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -32,7 +36,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 120px;  /* Adjust the size of the logo */
+    width: 120px;  /* Logo size adjustment */
     height: auto;
 }
 
@@ -68,6 +72,7 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
 #hero .hero-content {
@@ -105,6 +110,7 @@ header nav a:hover {
     padding: 80px 20px;
     background: #131316;
     text-align: center;
+    flex-grow: 1;
 }
 
 #roadmap h2 {
