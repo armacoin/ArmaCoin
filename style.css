@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset geral */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Header */
 header {
     background: #131316;
     padding: 20px 40px;
@@ -30,15 +31,14 @@ header .logo {
     align-items: center;
 }
 
-/* Ajuste o tamanho da imagem do logo */
 header .logo img {
-    width: 150px !important; /* Forçar o tamanho */
-    height: auto !important; /* Forçar a altura proporcional */
+    width: 120px; /* Tamanho ajustado para o logo */
+    height: auto;
 }
 
 header .logo h1 {
     font-size: 2rem;
-    margin-left: 50px; /* Aumente ou diminua conforme necessário */
+    margin-left: 10px;
     color: #00FFA3;
     font-weight: 700;
 }
@@ -60,6 +60,7 @@ header nav a:hover {
     color: #00FFA3;
 }
 
+/* Hero Section */
 #hero {
     background: linear-gradient(135deg, #00FFA3, #9945FF);
     height: 100vh;
@@ -67,96 +68,73 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    .jogar-btn {
-    padding: 15px 30px;
-    background: #00FFA3;  /* Cor do botão */
-    color: #131316;       /* Cor do texto */
-    border-radius: 5px;
-    font-size: 1.2rem;     /* Tamanho da fonte */
-    text-decoration: none; /* Remove sublinhado */
-    display: inline-block; /* Garante que o botão não ocupe toda a largura */
-    margin-top: 20px;      /* Espaçamento superior */
-    transition: background 0.3s ease, transform 0.3s ease; /* Transições */
+    padding: 0 20px;
 }
 
-.jogar-btn:hover {
-    background: #9945FF;  /* Cor de fundo ao passar o mouse */
-    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
-}
-}
-
-#hero h2 {
+.hero-content h2 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: #FFF;
 }
 
-#hero p {
+.hero-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
-#hero .btn {
+.btn {
     padding: 15px 30px;
     background: #00FFA3;
     color: #131316;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
     text-decoration: none;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#hero .btn:hover {
-    transform: scale(1.1);
+.btn:hover {
     background: #9945FF;
+    transform: translateY(-5px); /* Levanta o botão no hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.section {
-    padding: 100px 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #FFF;
-}
-
-.character-image {
-    width: 200px;
-    margin-top: 20px;
-}
-
+/* Roadmap Section */
 .roadmap {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .phase {
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 15px;
     width: 30%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .phase:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Social Icons */
 .social-icons {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
 }
 
 .social-link {
-    display: inline-block;
-    margin: 10px;
     color: #FFF;
-    font-size: 1.5rem;
-    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 15px;
     transition: color 0.3s ease;
 }
 
@@ -164,9 +142,13 @@ h2 {
     color: #00FFA3;
 }
 
+/* Footer */
 footer {
     background: #131316;
     text-align: center;
     padding: 20px;
     color: #FFF;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
