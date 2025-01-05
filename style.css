@@ -67,6 +67,23 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    .jogar-btn {
+    padding: 15px 30px;
+    background: #00FFA3;  /* Cor do botão */
+    color: #131316;       /* Cor do texto */
+    border-radius: 5px;
+    font-size: 1.2rem;     /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Garante que o botão não ocupe toda a largura */
+    margin-top: 20px;      /* Espaçamento superior */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transições */
+}
+
+.jogar-btn:hover {
+    background: #9945FF;  /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+}
 }
 
 #hero h2 {
